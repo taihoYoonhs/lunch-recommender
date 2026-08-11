@@ -1,75 +1,4761 @@
 [
-  { "id": "kimchi-jjigae", "name": "김치찌개", "category": "한식", "tags": { "weather": ["cold", "rainy", "normal"], "mood": ["comfort", "stress", "hangover"], "groupSize": ["1", "2", "3", "4"], "mealTime": ["breakfast", "lunch", "dinner"], "spicy": true, "price": "저가" } },
-  { "id": "doenjang-jjigae", "name": "된장찌개", "category": "한식", "tags": { "weather": ["cold", "normal"], "mood": ["comfort", "gentle"], "groupSize": ["1", "2", "3", "4"], "mealTime": ["breakfast", "lunch", "dinner"], "spicy": false, "price": "저가" } },
-  { "id": "sundaeguk", "name": "순댓국", "category": "한식", "tags": { "weather": ["cold", "rainy"], "mood": ["hangover", "comfort", "energy"], "groupSize": ["1", "2", "3", "4"], "mealTime": ["breakfast", "lunch", "dinner", "lateNight"], "spicy": false, "price": "저가" } },
-  { "id": "yukgaejang", "name": "육개장", "category": "한식", "tags": { "weather": ["cold", "rainy"], "mood": ["energy", "hangover", "warmSoup"], "groupSize": ["1", "2", "3", "4"], "mealTime": ["lunch", "dinner"], "spicy": true, "price": "중가" } },
-  { "id": "gamjatang", "name": "감자탕", "category": "한식", "tags": { "weather": ["cold", "rainy"], "mood": ["energy", "hangover", "leisure", "warmSoup", "meatCraving"], "groupSize": ["2", "3", "4", "5", "6", "7+"], "mealTime": ["lunch", "dinner", "lateNight"], "spicy": true, "price": "중가" } },
-  { "id": "budae-jjigae", "name": "부대찌개", "category": "한식", "tags": { "weather": ["cold", "rainy"], "mood": ["comfort", "stress", "filling"], "groupSize": ["2", "3", "4", "5", "6"], "mealTime": ["lunch", "dinner"], "spicy": true, "price": "중가" } },
-  { "id": "samgyetang", "name": "삼계탕", "category": "한식", "tags": { "weather": ["hot"], "mood": ["energy", "celebration", "meatCraving"], "groupSize": ["1", "2", "3", "4"], "mealTime": ["lunch", "dinner"], "spicy": false, "price": "고가" } },
-  { "id": "naengmyeon", "name": "냉면", "category": "한식", "tags": { "weather": ["hot", "normal"], "mood": ["chilled", "diet", "quick", "noodleCraving"], "groupSize": ["1", "2", "3", "4"], "mealTime": ["lunch", "dinner"], "spicy": false, "price": "중가" } },
-  { "id": "bibim-naengmyeon", "name": "비빔냉면", "category": "한식", "tags": { "weather": ["hot"], "mood": ["chilled", "stress", "noodleCraving"], "groupSize": ["1", "2", "3", "4"], "mealTime": ["lunch", "dinner"], "spicy": true, "price": "중가" } },
-  { "id": "kongguksu", "name": "콩국수", "category": "한식", "tags": { "weather": ["hot"], "mood": ["chilled", "diet", "noodleCraving"], "groupSize": ["1", "2", "3"], "mealTime": ["lunch"], "spicy": false, "price": "중가" } },
-  { "id": "bibimbap", "name": "비빔밥", "category": "한식", "tags": { "weather": ["normal"], "mood": ["diet", "comfort", "random", "healthy"], "groupSize": ["1", "2", "3", "4"], "mealTime": ["breakfast", "lunch", "dinner"], "spicy": false, "price": "저가" } },
-  { "id": "jeyuk-bokkeum", "name": "제육볶음", "category": "한식", "tags": { "weather": ["normal", "cold"], "mood": ["stress", "filling", "energy", "meatCraving"], "groupSize": ["2", "3", "4"], "mealTime": ["lunch", "dinner"], "spicy": true, "price": "저가" } },
-  { "id": "galbi-tang", "name": "갈비탕", "category": "한식", "tags": { "weather": ["cold"], "mood": ["energy", "celebration", "comfort", "meatCraving"], "groupSize": ["1", "2", "3", "4"], "mealTime": ["lunch", "dinner"], "spicy": false, "price": "고가" } },
-  { "id": "seolleongtang", "name": "설렁탕", "category": "한식", "tags": { "weather": ["cold"], "mood": ["comfort", "energy", "hangover", "gentle"], "groupSize": ["1", "2", "3"], "mealTime": ["breakfast", "lunch", "dinner"], "spicy": false, "price": "중가" } },
-  { "id": "tteokbokki", "name": "떡볶이", "category": "한식", "tags": { "weather": ["rainy", "normal"], "mood": ["stress", "refresh"], "groupSize": ["1", "2", "3"], "mealTime": ["snack", "dinner", "lateNight"], "spicy": true, "price": "저가" } },
-  { "id": "gimbap", "name": "김밥", "category": "한식", "tags": { "weather": ["normal"], "mood": ["quick", "diet", "random"], "groupSize": ["1", "2"], "mealTime": ["breakfast", "lunch", "snack"], "spicy": false, "price": "저가" } },
-  { "id": "samgyeopsal", "name": "삼겹살", "category": "한식", "tags": { "weather": ["normal", "cold"], "mood": ["celebration", "leisure", "filling", "meatCraving"], "groupSize": ["2", "3", "4", "5", "6", "7+"], "mealTime": ["dinner", "lateNight"], "spicy": false, "price": "중가" } },
-  { "id": "galbi-jjim", "name": "갈비찜", "category": "한식", "tags": { "weather": ["normal"], "mood": ["celebration", "leisure", "meatCraving"], "groupSize": ["3", "4", "5", "6", "7+"], "mealTime": ["dinner"], "spicy": false, "price": "고가" } },
-  { "id": "kalguksu", "name": "칼국수", "category": "한식", "tags": { "weather": ["rainy", "cold"], "mood": ["comfort", "warmSoup", "noodleCraving"], "groupSize": ["1", "2", "3", "4"], "mealTime": ["lunch", "dinner"], "spicy": false, "price": "저가" } },
-  { "id": "bossam", "name": "보쌈", "category": "한식", "tags": { "weather": ["normal"], "mood": ["celebration", "leisure", "filling", "meatCraving"], "groupSize": ["2", "3", "4", "5", "6"], "mealTime": ["dinner", "lateNight"], "spicy": false, "price": "중가" } },
-  { "id": "hotteok", "name": "호떡", "category": "한식", "tags": { "weather": ["cold"], "mood": ["sweet", "comfort"], "groupSize": ["1", "2"], "mealTime": ["snack"], "spicy": false, "price": "저가" } },
-  { "id": "dakgalbi", "name": "닭갈비", "category": "한식", "tags": { "weather": ["cold", "normal"], "mood": ["stress", "filling", "meatCraving"], "groupSize": ["2", "3", "4", "5", "6"], "mealTime": ["dinner", "lateNight"], "spicy": true, "price": "중가" } },
-  { "id": "yukhoe", "name": "육회", "category": "한식", "tags": { "weather": ["normal"], "mood": ["celebration", "meatCraving", "adventure"], "groupSize": ["1", "2", "3", "4"], "mealTime": ["dinner"], "spicy": false, "price": "고가" } },
-  { "id": "jjimdak", "name": "찜닭", "category": "한식", "tags": { "weather": ["normal", "cold"], "mood": ["celebration", "meatCraving", "filling"], "groupSize": ["2", "3", "4", "5", "6"], "mealTime": ["dinner"], "spicy": true, "price": "중가" } },
-  { "id": "jeonbokjuk", "name": "전복죽", "category": "한식", "tags": { "weather": ["cold", "normal"], "mood": ["gentle", "energy"], "groupSize": ["1", "2"], "mealTime": ["breakfast", "lunch"], "spicy": false, "price": "고가" } },
-  { "id": "miyeokguk", "name": "미역국", "category": "한식", "tags": { "weather": ["normal", "cold"], "mood": ["gentle", "comfort"], "groupSize": ["1", "2", "3"], "mealTime": ["breakfast", "lunch"], "spicy": false, "price": "저가" } },
-  { "id": "gomtang", "name": "곰탕", "category": "한식", "tags": { "weather": ["cold"], "mood": ["energy", "gentle", "comfort"], "groupSize": ["1", "2", "3"], "mealTime": ["breakfast", "lunch", "dinner"], "spicy": false, "price": "중가" } },
-
-  { "id": "jjajangmyeon", "name": "짜장면", "category": "중식", "tags": { "weather": ["normal", "rainy"], "mood": ["comfort", "quick", "random", "noodleCraving"], "groupSize": ["1", "2", "3", "4"], "mealTime": ["lunch", "dinner"], "spicy": false, "price": "저가" } },
-  { "id": "jjamppong", "name": "짬뽕", "category": "중식", "tags": { "weather": ["rainy", "cold"], "mood": ["stress", "warmSoup", "noodleCraving"], "groupSize": ["1", "2", "3", "4"], "mealTime": ["lunch", "dinner"], "spicy": true, "price": "저가" } },
-  { "id": "tangsuyuk", "name": "탕수육", "category": "중식", "tags": { "weather": ["normal"], "mood": ["celebration", "leisure", "greasy"], "groupSize": ["2", "3", "4", "5", "6"], "mealTime": ["lunch", "dinner"], "spicy": false, "price": "중가" } },
-  { "id": "mapo-tofu", "name": "마파두부", "category": "중식", "tags": { "weather": ["cold", "normal"], "mood": ["stress", "comfort"], "groupSize": ["1", "2", "3"], "mealTime": ["lunch", "dinner"], "spicy": true, "price": "저가" } },
-  { "id": "mala-tang", "name": "마라탕", "category": "중식", "tags": { "weather": ["cold", "rainy"], "mood": ["stress", "adventure", "warmSoup", "noodleCraving"], "groupSize": ["1", "2", "3", "4"], "mealTime": ["lunch", "dinner", "lateNight"], "spicy": true, "price": "저가" } },
-  { "id": "yusanseul", "name": "유산슬", "category": "중식", "tags": { "weather": ["normal"], "mood": ["leisure", "celebration"], "groupSize": ["3", "4", "5", "6", "7+"], "mealTime": ["dinner"], "spicy": false, "price": "고가" } },
-  { "id": "kkanpunggi", "name": "깐풍기", "category": "중식", "tags": { "weather": ["normal"], "mood": ["celebration", "adventure"], "groupSize": ["2", "3", "4", "5", "6"], "mealTime": ["dinner"], "spicy": true, "price": "중가" } },
-  { "id": "jjajangbap", "name": "짜장밥", "category": "중식", "tags": { "weather": ["normal"], "mood": ["comfort", "quick"], "groupSize": ["1", "2"], "mealTime": ["lunch", "dinner"], "spicy": false, "price": "저가" } },
-  { "id": "dimsum", "name": "딤섬", "category": "중식", "tags": { "weather": ["normal"], "mood": ["leisure", "celebration", "adventure"], "groupSize": ["2", "3", "4"], "mealTime": ["lunch", "dinner", "snack"], "spicy": false, "price": "중가" } },
-
-  { "id": "sushi", "name": "초밥", "category": "일식", "tags": { "weather": ["normal", "hot"], "mood": ["leisure", "celebration", "diet"], "groupSize": ["1", "2", "3", "4"], "mealTime": ["lunch", "dinner"], "spicy": false, "price": "고가" } },
-  { "id": "donkkaseu", "name": "돈까스", "category": "일식", "tags": { "weather": ["normal"], "mood": ["comfort", "filling", "greasy"], "groupSize": ["1", "2", "3", "4"], "mealTime": ["lunch", "dinner"], "spicy": false, "price": "저가" } },
-  { "id": "ramen-ilsik", "name": "일본라멘", "category": "일식", "tags": { "weather": ["cold", "rainy"], "mood": ["comfort", "warmSoup", "hangover", "noodleCraving"], "groupSize": ["1", "2", "3"], "mealTime": ["lunch", "dinner", "lateNight"], "spicy": false, "price": "중가" } },
-  { "id": "udon", "name": "우동", "category": "일식", "tags": { "weather": ["cold", "rainy"], "mood": ["comfort", "quick", "warmSoup", "noodleCraving"], "groupSize": ["1", "2", "3"], "mealTime": ["lunch", "dinner"], "spicy": false, "price": "저가" } },
-  { "id": "naeng-soba", "name": "냉모밀", "category": "일식", "tags": { "weather": ["hot"], "mood": ["chilled", "diet", "quick", "noodleCraving"], "groupSize": ["1", "2"], "mealTime": ["lunch"], "spicy": false, "price": "저가" } },
-  { "id": "gyudon", "name": "규동", "category": "일식", "tags": { "weather": ["normal"], "mood": ["quick", "filling", "random"], "groupSize": ["1", "2"], "mealTime": ["lunch", "dinner"], "spicy": false, "price": "저가" } },
-  { "id": "chirashi", "name": "치라시동", "category": "일식", "tags": { "weather": ["hot", "normal"], "mood": ["diet", "leisure", "healthy"], "groupSize": ["1", "2"], "mealTime": ["lunch"], "spicy": false, "price": "고가" } },
-  { "id": "takoyaki", "name": "타코야끼", "category": "일식", "tags": { "weather": ["normal"], "mood": ["adventure", "refresh"], "groupSize": ["2", "3", "4"], "mealTime": ["snack"], "spicy": false, "price": "저가" } },
-  { "id": "sashimi", "name": "모듬사시미", "category": "일식", "tags": { "weather": ["normal", "hot"], "mood": ["celebration", "leisure", "healthy"], "groupSize": ["2", "3", "4"], "mealTime": ["dinner"], "spicy": false, "price": "고가" } },
-  { "id": "katsudon", "name": "카츠동", "category": "일식", "tags": { "weather": ["normal", "cold"], "mood": ["comfort", "filling", "greasy"], "groupSize": ["1", "2"], "mealTime": ["lunch", "dinner"], "spicy": false, "price": "저가" } },
-  { "id": "onigiri", "name": "오니기리 세트", "category": "일식", "tags": { "weather": ["normal"], "mood": ["quick", "diet", "random"], "groupSize": ["1", "2"], "mealTime": ["breakfast", "lunch", "snack"], "spicy": false, "price": "저가" } },
-
-  { "id": "pasta-tomato", "name": "토마토파스타", "category": "양식", "tags": { "weather": ["normal"], "mood": ["comfort", "quick", "diet", "noodleCraving"], "groupSize": ["1", "2", "3"], "mealTime": ["lunch", "dinner"], "spicy": false, "price": "중가" } },
-  { "id": "cream-pasta", "name": "크림파스타", "category": "양식", "tags": { "weather": ["cold", "normal"], "mood": ["comfort", "celebration", "noodleCraving"], "groupSize": ["1", "2", "3", "4"], "mealTime": ["lunch", "dinner"], "spicy": false, "price": "중가" } },
-  { "id": "steak", "name": "스테이크", "category": "양식", "tags": { "weather": ["normal"], "mood": ["celebration", "energy", "leisure", "meatCraving"], "groupSize": ["2", "3", "4"], "mealTime": ["dinner"], "spicy": false, "price": "고가" } },
-  { "id": "burger", "name": "수제버거", "category": "양식", "tags": { "weather": ["normal"], "mood": ["quick", "stress", "filling", "greasy"], "groupSize": ["1", "2", "3"], "mealTime": ["lunch", "dinner"], "spicy": false, "price": "중가" } },
-  { "id": "pizza", "name": "피자", "category": "양식", "tags": { "weather": ["normal", "rainy"], "mood": ["celebration", "random", "filling", "greasy"], "groupSize": ["2", "3", "4", "5", "6"], "mealTime": ["dinner", "lateNight"], "spicy": false, "price": "중가" } },
-  { "id": "salad-bowl", "name": "샐러드보울", "category": "양식", "tags": { "weather": ["hot"], "mood": ["diet", "chilled", "healthy"], "groupSize": ["1", "2"], "mealTime": ["lunch"], "spicy": false, "price": "중가" } },
-  { "id": "clam-chowder", "name": "크림수프", "category": "양식", "tags": { "weather": ["cold", "rainy"], "mood": ["comfort", "warmSoup"], "groupSize": ["1", "2", "3"], "mealTime": ["lunch", "dinner"], "spicy": false, "price": "중가" } },
-  { "id": "omurice", "name": "오므라이스", "category": "양식", "tags": { "weather": ["normal"], "mood": ["comfort", "gentle", "random"], "groupSize": ["1", "2"], "mealTime": ["lunch", "dinner"], "spicy": false, "price": "저가" } },
-  { "id": "gratin", "name": "그라탕", "category": "양식", "tags": { "weather": ["cold"], "mood": ["comfort", "greasy", "celebration"], "groupSize": ["1", "2", "3"], "mealTime": ["dinner"], "spicy": false, "price": "중가" } },
-  { "id": "brunch-set", "name": "브런치세트", "category": "양식", "tags": { "weather": ["normal", "hot"], "mood": ["leisure", "healthy"], "groupSize": ["1", "2"], "mealTime": ["breakfast", "snack"], "spicy": false, "price": "중가" } },
-
-  { "id": "poke-bowl", "name": "포케보울", "category": "기타", "tags": { "weather": ["hot"], "mood": ["diet", "adventure", "chilled", "healthy"], "groupSize": ["1", "2"], "mealTime": ["lunch"], "spicy": false, "price": "중가" } },
-  { "id": "taco", "name": "타코", "category": "기타", "tags": { "weather": ["normal", "hot"], "mood": ["adventure", "refresh"], "groupSize": ["1", "2", "3", "4"], "mealTime": ["lunch", "dinner"], "spicy": true, "price": "중가" } },
-  { "id": "bingsu", "name": "빙수", "category": "기타", "tags": { "weather": ["hot"], "mood": ["sweet", "refresh", "chilled"], "groupSize": ["1", "2", "3", "4"], "mealTime": ["snack"], "spicy": false, "price": "중가" } },
-  { "id": "bunsik-modum", "name": "분식모듬", "category": "기타", "tags": { "weather": ["rainy", "normal"], "mood": ["stress", "filling", "random"], "groupSize": ["2", "3", "4"], "mealTime": ["snack", "dinner", "lateNight"], "spicy": true, "price": "저가" } },
-  { "id": "buffet", "name": "뷔페", "category": "기타", "tags": { "weather": ["normal"], "mood": ["celebration", "leisure", "filling"], "groupSize": ["4", "5", "6", "7+"], "mealTime": ["lunch", "dinner"], "spicy": false, "price": "고가" } },
-  { "id": "sandwich", "name": "샌드위치", "category": "기타", "tags": { "weather": ["normal", "hot"], "mood": ["quick", "diet", "random"], "groupSize": ["1", "2"], "mealTime": ["breakfast", "lunch", "snack"], "spicy": false, "price": "저가" } },
-  { "id": "fried-chicken", "name": "후라이드치킨", "category": "기타", "tags": { "weather": ["normal"], "mood": ["celebration", "greasy", "filling", "random"], "groupSize": ["2", "3", "4", "5", "6"], "mealTime": ["dinner", "lateNight"], "spicy": false, "price": "중가" } },
-  { "id": "yangnyeom-chicken", "name": "양념치킨", "category": "기타", "tags": { "weather": ["normal"], "mood": ["stress", "greasy", "celebration"], "groupSize": ["2", "3", "4", "5", "6"], "mealTime": ["dinner", "lateNight"], "spicy": true, "price": "중가" } },
-  { "id": "pho", "name": "베트남쌀국수", "category": "기타", "tags": { "weather": ["cold", "rainy", "normal"], "mood": ["gentle", "comfort", "noodleCraving", "healthy"], "groupSize": ["1", "2", "3"], "mealTime": ["lunch", "dinner"], "spicy": false, "price": "중가" } },
-  { "id": "padthai", "name": "팟타이", "category": "기타", "tags": { "weather": ["normal", "hot"], "mood": ["adventure", "noodleCraving"], "groupSize": ["1", "2", "3"], "mealTime": ["lunch", "dinner"], "spicy": true, "price": "중가" } },
-  { "id": "burrito", "name": "부리또", "category": "기타", "tags": { "weather": ["normal", "hot"], "mood": ["quick", "adventure", "filling"], "groupSize": ["1", "2"], "mealTime": ["lunch", "dinner"], "spicy": true, "price": "중가" } },
-  { "id": "gopchang", "name": "곱창/막창", "category": "기타", "tags": { "weather": ["normal", "cold"], "mood": ["celebration", "greasy", "meatCraving"], "groupSize": ["2", "3", "4", "5", "6"], "mealTime": ["dinner", "lateNight"], "spicy": false, "price": "중가" } }
+  {
+    "id": "kimchi-jjigae",
+    "name": "김치찌개",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "cold",
+        "rainy",
+        "normal"
+      ],
+      "mood": [
+        "comfort",
+        "stress",
+        "hangover"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "doenjang-jjigae",
+    "name": "된장찌개",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "cold",
+        "normal"
+      ],
+      "mood": [
+        "comfort",
+        "gentle"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "sundaeguk",
+    "name": "순댓국",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "cold",
+        "rainy"
+      ],
+      "mood": [
+        "hangover",
+        "comfort",
+        "energy"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "breakfast",
+        "lunch",
+        "dinner",
+        "lateNight"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "yukgaejang",
+    "name": "육개장",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "cold",
+        "rainy"
+      ],
+      "mood": [
+        "energy",
+        "hangover",
+        "warmSoup"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "gamjatang",
+    "name": "감자탕",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "cold",
+        "rainy"
+      ],
+      "mood": [
+        "energy",
+        "hangover",
+        "leisure",
+        "warmSoup",
+        "meatCraving"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7+"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner",
+        "lateNight"
+      ],
+      "spicy": true,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "budae-jjigae",
+    "name": "부대찌개",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "cold",
+        "rainy"
+      ],
+      "mood": [
+        "comfort",
+        "stress",
+        "filling"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "samgyetang",
+    "name": "삼계탕",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "hot"
+      ],
+      "mood": [
+        "energy",
+        "celebration",
+        "meatCraving"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "고가"
+    }
+  },
+  {
+    "id": "naengmyeon",
+    "name": "냉면",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "hot",
+        "normal"
+      ],
+      "mood": [
+        "chilled",
+        "diet",
+        "quick",
+        "noodleCraving"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "bibim-naengmyeon",
+    "name": "비빔냉면",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "hot"
+      ],
+      "mood": [
+        "chilled",
+        "stress",
+        "noodleCraving"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "kongguksu",
+    "name": "콩국수",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "hot"
+      ],
+      "mood": [
+        "chilled",
+        "diet",
+        "noodleCraving"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "lunch"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "bibimbap",
+    "name": "비빔밥",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "diet",
+        "comfort",
+        "random",
+        "healthy"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "jeyuk-bokkeum",
+    "name": "제육볶음",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "normal",
+        "cold"
+      ],
+      "mood": [
+        "stress",
+        "filling",
+        "energy",
+        "meatCraving"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "galbi-tang",
+    "name": "갈비탕",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "cold"
+      ],
+      "mood": [
+        "energy",
+        "celebration",
+        "comfort",
+        "meatCraving"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "고가"
+    }
+  },
+  {
+    "id": "seolleongtang",
+    "name": "설렁탕",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "cold"
+      ],
+      "mood": [
+        "comfort",
+        "energy",
+        "hangover",
+        "gentle"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "tteokbokki",
+    "name": "떡볶이",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "rainy",
+        "normal"
+      ],
+      "mood": [
+        "stress",
+        "refresh"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "snack",
+        "dinner",
+        "lateNight"
+      ],
+      "spicy": true,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "gimbap",
+    "name": "김밥",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "quick",
+        "diet",
+        "random"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "breakfast",
+        "lunch",
+        "snack"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "samgyeopsal",
+    "name": "삼겹살",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "normal",
+        "cold"
+      ],
+      "mood": [
+        "celebration",
+        "leisure",
+        "filling",
+        "meatCraving"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7+"
+      ],
+      "mealTime": [
+        "dinner",
+        "lateNight"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "galbi-jjim",
+    "name": "갈비찜",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "celebration",
+        "leisure",
+        "meatCraving"
+      ],
+      "groupSize": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7+"
+      ],
+      "mealTime": [
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "고가"
+    }
+  },
+  {
+    "id": "kalguksu",
+    "name": "칼국수",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "rainy",
+        "cold"
+      ],
+      "mood": [
+        "comfort",
+        "warmSoup",
+        "noodleCraving"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "bossam",
+    "name": "보쌈",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "celebration",
+        "leisure",
+        "filling",
+        "meatCraving"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "mealTime": [
+        "dinner",
+        "lateNight"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "hotteok",
+    "name": "호떡",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "cold"
+      ],
+      "mood": [
+        "sweet",
+        "comfort"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "snack"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "dakgalbi",
+    "name": "닭갈비",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "cold",
+        "normal"
+      ],
+      "mood": [
+        "stress",
+        "filling",
+        "meatCraving"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "mealTime": [
+        "dinner",
+        "lateNight"
+      ],
+      "spicy": true,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "yukhoe",
+    "name": "육회",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "celebration",
+        "meatCraving",
+        "adventure"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "고가"
+    }
+  },
+  {
+    "id": "jjimdak",
+    "name": "찜닭",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "normal",
+        "cold"
+      ],
+      "mood": [
+        "celebration",
+        "meatCraving",
+        "filling"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "mealTime": [
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "jeonbokjuk",
+    "name": "전복죽",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "cold",
+        "normal"
+      ],
+      "mood": [
+        "gentle",
+        "energy"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "breakfast",
+        "lunch"
+      ],
+      "spicy": false,
+      "price": "고가"
+    }
+  },
+  {
+    "id": "miyeokguk",
+    "name": "미역국",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "normal",
+        "cold"
+      ],
+      "mood": [
+        "gentle",
+        "comfort"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "breakfast",
+        "lunch"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "gomtang",
+    "name": "곰탕",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "cold"
+      ],
+      "mood": [
+        "energy",
+        "gentle",
+        "comfort"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "jjajangmyeon",
+    "name": "짜장면",
+    "category": "중식",
+    "tags": {
+      "weather": [
+        "normal",
+        "rainy"
+      ],
+      "mood": [
+        "comfort",
+        "quick",
+        "random",
+        "noodleCraving"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "jjamppong",
+    "name": "짬뽕",
+    "category": "중식",
+    "tags": {
+      "weather": [
+        "rainy",
+        "cold"
+      ],
+      "mood": [
+        "stress",
+        "warmSoup",
+        "noodleCraving"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "tangsuyuk",
+    "name": "탕수육",
+    "category": "중식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "celebration",
+        "leisure",
+        "greasy"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "mapo-tofu",
+    "name": "마파두부",
+    "category": "중식",
+    "tags": {
+      "weather": [
+        "cold",
+        "normal"
+      ],
+      "mood": [
+        "stress",
+        "comfort"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "mala-tang",
+    "name": "마라탕",
+    "category": "중식",
+    "tags": {
+      "weather": [
+        "cold",
+        "rainy"
+      ],
+      "mood": [
+        "stress",
+        "adventure",
+        "warmSoup",
+        "noodleCraving"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner",
+        "lateNight"
+      ],
+      "spicy": true,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "yusanseul",
+    "name": "유산슬",
+    "category": "중식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "leisure",
+        "celebration"
+      ],
+      "groupSize": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7+"
+      ],
+      "mealTime": [
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "고가"
+    }
+  },
+  {
+    "id": "kkanpunggi",
+    "name": "깐풍기",
+    "category": "중식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "celebration",
+        "adventure"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "mealTime": [
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "jjajangbap",
+    "name": "짜장밥",
+    "category": "중식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "comfort",
+        "quick"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "dimsum",
+    "name": "딤섬",
+    "category": "중식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "leisure",
+        "celebration",
+        "adventure"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner",
+        "snack"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "sushi",
+    "name": "초밥",
+    "category": "일식",
+    "tags": {
+      "weather": [
+        "normal",
+        "hot"
+      ],
+      "mood": [
+        "leisure",
+        "celebration",
+        "diet"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "고가"
+    }
+  },
+  {
+    "id": "donkkaseu",
+    "name": "돈까스",
+    "category": "일식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "comfort",
+        "filling",
+        "greasy"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "ramen-ilsik",
+    "name": "일본라멘",
+    "category": "일식",
+    "tags": {
+      "weather": [
+        "cold",
+        "rainy"
+      ],
+      "mood": [
+        "comfort",
+        "warmSoup",
+        "hangover",
+        "noodleCraving"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner",
+        "lateNight"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "udon",
+    "name": "우동",
+    "category": "일식",
+    "tags": {
+      "weather": [
+        "cold",
+        "rainy"
+      ],
+      "mood": [
+        "comfort",
+        "quick",
+        "warmSoup",
+        "noodleCraving"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "naeng-soba",
+    "name": "냉모밀",
+    "category": "일식",
+    "tags": {
+      "weather": [
+        "hot"
+      ],
+      "mood": [
+        "chilled",
+        "diet",
+        "quick",
+        "noodleCraving"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "gyudon",
+    "name": "규동",
+    "category": "일식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "quick",
+        "filling",
+        "random"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "chirashi",
+    "name": "치라시동",
+    "category": "일식",
+    "tags": {
+      "weather": [
+        "hot",
+        "normal"
+      ],
+      "mood": [
+        "diet",
+        "leisure",
+        "healthy"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch"
+      ],
+      "spicy": false,
+      "price": "고가"
+    }
+  },
+  {
+    "id": "takoyaki",
+    "name": "타코야끼",
+    "category": "일식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "adventure",
+        "refresh"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "snack"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "sashimi",
+    "name": "모듬사시미",
+    "category": "일식",
+    "tags": {
+      "weather": [
+        "normal",
+        "hot"
+      ],
+      "mood": [
+        "celebration",
+        "leisure",
+        "healthy"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "고가"
+    }
+  },
+  {
+    "id": "katsudon",
+    "name": "카츠동",
+    "category": "일식",
+    "tags": {
+      "weather": [
+        "normal",
+        "cold"
+      ],
+      "mood": [
+        "comfort",
+        "filling",
+        "greasy"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "onigiri",
+    "name": "오니기리 세트",
+    "category": "일식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "quick",
+        "diet",
+        "random"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "breakfast",
+        "lunch",
+        "snack"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "pasta-tomato",
+    "name": "토마토파스타",
+    "category": "양식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "comfort",
+        "quick",
+        "diet",
+        "noodleCraving"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "cream-pasta",
+    "name": "크림파스타",
+    "category": "양식",
+    "tags": {
+      "weather": [
+        "cold",
+        "normal"
+      ],
+      "mood": [
+        "comfort",
+        "celebration",
+        "noodleCraving"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "steak",
+    "name": "스테이크",
+    "category": "양식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "celebration",
+        "energy",
+        "leisure",
+        "meatCraving"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "고가"
+    }
+  },
+  {
+    "id": "burger",
+    "name": "수제버거",
+    "category": "양식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "quick",
+        "stress",
+        "filling",
+        "greasy"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "pizza",
+    "name": "피자",
+    "category": "양식",
+    "tags": {
+      "weather": [
+        "normal",
+        "rainy"
+      ],
+      "mood": [
+        "celebration",
+        "random",
+        "filling",
+        "greasy"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "mealTime": [
+        "dinner",
+        "lateNight"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "salad-bowl",
+    "name": "샐러드보울",
+    "category": "양식",
+    "tags": {
+      "weather": [
+        "hot"
+      ],
+      "mood": [
+        "diet",
+        "chilled",
+        "healthy"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "clam-chowder",
+    "name": "크림수프",
+    "category": "양식",
+    "tags": {
+      "weather": [
+        "cold",
+        "rainy"
+      ],
+      "mood": [
+        "comfort",
+        "warmSoup"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "omurice",
+    "name": "오므라이스",
+    "category": "양식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "comfort",
+        "gentle",
+        "random"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "gratin",
+    "name": "그라탕",
+    "category": "양식",
+    "tags": {
+      "weather": [
+        "cold"
+      ],
+      "mood": [
+        "comfort",
+        "greasy",
+        "celebration"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "brunch-set",
+    "name": "브런치세트",
+    "category": "양식",
+    "tags": {
+      "weather": [
+        "normal",
+        "hot"
+      ],
+      "mood": [
+        "leisure",
+        "healthy"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "breakfast",
+        "snack"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "poke-bowl",
+    "name": "포케보울",
+    "category": "기타",
+    "tags": {
+      "weather": [
+        "hot"
+      ],
+      "mood": [
+        "diet",
+        "adventure",
+        "chilled",
+        "healthy"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "taco",
+    "name": "타코",
+    "category": "기타",
+    "tags": {
+      "weather": [
+        "normal",
+        "hot"
+      ],
+      "mood": [
+        "adventure",
+        "refresh"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "bingsu",
+    "name": "빙수",
+    "category": "기타",
+    "tags": {
+      "weather": [
+        "hot"
+      ],
+      "mood": [
+        "sweet",
+        "refresh",
+        "chilled"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "snack"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "bunsik-modum",
+    "name": "분식모듬",
+    "category": "기타",
+    "tags": {
+      "weather": [
+        "rainy",
+        "normal"
+      ],
+      "mood": [
+        "stress",
+        "filling",
+        "random"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "snack",
+        "dinner",
+        "lateNight"
+      ],
+      "spicy": true,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "buffet",
+    "name": "뷔페",
+    "category": "기타",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "celebration",
+        "leisure",
+        "filling"
+      ],
+      "groupSize": [
+        "4",
+        "5",
+        "6",
+        "7+"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "고가"
+    }
+  },
+  {
+    "id": "sandwich",
+    "name": "샌드위치",
+    "category": "기타",
+    "tags": {
+      "weather": [
+        "normal",
+        "hot"
+      ],
+      "mood": [
+        "quick",
+        "diet",
+        "random"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "breakfast",
+        "lunch",
+        "snack"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "fried-chicken",
+    "name": "후라이드치킨",
+    "category": "기타",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "celebration",
+        "greasy",
+        "filling",
+        "random"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "mealTime": [
+        "dinner",
+        "lateNight"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "yangnyeom-chicken",
+    "name": "양념치킨",
+    "category": "기타",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "stress",
+        "greasy",
+        "celebration"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "mealTime": [
+        "dinner",
+        "lateNight"
+      ],
+      "spicy": true,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "pho",
+    "name": "베트남쌀국수",
+    "category": "기타",
+    "tags": {
+      "weather": [
+        "cold",
+        "rainy",
+        "normal"
+      ],
+      "mood": [
+        "gentle",
+        "comfort",
+        "noodleCraving",
+        "healthy"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "padthai",
+    "name": "팟타이",
+    "category": "기타",
+    "tags": {
+      "weather": [
+        "normal",
+        "hot"
+      ],
+      "mood": [
+        "adventure",
+        "noodleCraving"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "burrito",
+    "name": "부리또",
+    "category": "기타",
+    "tags": {
+      "weather": [
+        "normal",
+        "hot"
+      ],
+      "mood": [
+        "quick",
+        "adventure",
+        "filling"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "gopchang",
+    "name": "곱창/막창",
+    "category": "기타",
+    "tags": {
+      "weather": [
+        "normal",
+        "cold"
+      ],
+      "mood": [
+        "celebration",
+        "greasy",
+        "meatCraving"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "mealTime": [
+        "dinner",
+        "lateNight"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "cheonggukjang-jjigae",
+    "name": "청국장찌개",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "cold",
+        "rainy"
+      ],
+      "mood": [
+        "comfort",
+        "warmSoup",
+        "gentle",
+        "healthy"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "sundubu-jjigae",
+    "name": "순두부찌개",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "cold",
+        "rainy"
+      ],
+      "mood": [
+        "comfort",
+        "warmSoup",
+        "gentle"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "jeyuk-duruchigi",
+    "name": "제육두루치기",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "normal",
+        "cold"
+      ],
+      "mood": [
+        "stress",
+        "meatCraving",
+        "filling",
+        "energy"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "galbi-gui",
+    "name": "소갈비구이",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "celebration",
+        "meatCraving",
+        "leisure",
+        "filling"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "mealTime": [
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "고가"
+    }
+  },
+  {
+    "id": "bulgogi",
+    "name": "소불고기",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "normal",
+        "cold"
+      ],
+      "mood": [
+        "comfort",
+        "meatCraving",
+        "filling"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "japchae",
+    "name": "잡채",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "celebration",
+        "comfort",
+        "sweet"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner",
+        "snack"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "nakji-bokkeum",
+    "name": "낙지볶음",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "stress",
+        "energy",
+        "filling"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "ojingeo-bokkeum",
+    "name": "오징어볶음",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "stress",
+        "filling",
+        "comfort"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "kimchi-bokkeumbap",
+    "name": "김치볶음밥",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "normal",
+        "cold"
+      ],
+      "mood": [
+        "comfort",
+        "quick",
+        "random"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner",
+        "lateNight"
+      ],
+      "spicy": true,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "jeyuk-deopbap",
+    "name": "제육덮밥",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "quick",
+        "filling",
+        "meatCraving"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "kongnamul-gukbap",
+    "name": "콩나물국밥",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "cold"
+      ],
+      "mood": [
+        "hangover",
+        "gentle",
+        "comfort",
+        "warmSoup"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "breakfast",
+        "lunch"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "ppyeo-haejangguk",
+    "name": "뼈해장국",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "cold"
+      ],
+      "mood": [
+        "hangover",
+        "warmSoup",
+        "filling",
+        "comfort"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "chueotang",
+    "name": "추어탕",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "cold"
+      ],
+      "mood": [
+        "energy",
+        "warmSoup",
+        "gentle"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "maeuntang",
+    "name": "매운탕",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "cold",
+        "rainy"
+      ],
+      "mood": [
+        "stress",
+        "warmSoup",
+        "filling"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "agwijjim",
+    "name": "아귀찜",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "normal",
+        "cold"
+      ],
+      "mood": [
+        "adventure",
+        "filling",
+        "celebration"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "고가"
+    }
+  },
+  {
+    "id": "galchi-jorim",
+    "name": "갈치조림",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "comfort",
+        "filling",
+        "gentle"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "dak-bokkeumtang",
+    "name": "닭볶음탕",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "normal",
+        "cold"
+      ],
+      "mood": [
+        "stress",
+        "meatCraving",
+        "filling",
+        "celebration"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "dakbal",
+    "name": "닭발",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "stress",
+        "adventure",
+        "meatCraving"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "snack",
+        "lateNight"
+      ],
+      "spicy": true,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "makguksu",
+    "name": "막국수",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "hot"
+      ],
+      "mood": [
+        "refresh",
+        "noodleCraving",
+        "chilled"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "lunch"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "janchi-guksu",
+    "name": "잔치국수",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "normal",
+        "cold"
+      ],
+      "mood": [
+        "comfort",
+        "noodleCraving",
+        "gentle",
+        "quick"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "lunch"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "sujebi",
+    "name": "수제비",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "rainy",
+        "cold"
+      ],
+      "mood": [
+        "comfort",
+        "gentle",
+        "warmSoup"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "pajeon",
+    "name": "파전",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "rainy"
+      ],
+      "mood": [
+        "comfort",
+        "leisure",
+        "greasy"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "snack",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "kimchi-jeon",
+    "name": "김치전",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "rainy"
+      ],
+      "mood": [
+        "comfort",
+        "greasy",
+        "stress"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "snack",
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "jeyuk-ssambap",
+    "name": "제육쌈밥",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "healthy",
+        "filling",
+        "meatCraving"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "sogogi-muguk",
+    "name": "소고기무국",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "cold"
+      ],
+      "mood": [
+        "gentle",
+        "warmSoup",
+        "comfort"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "sundae-jeongsik",
+    "name": "모듬순대",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "comfort",
+        "filling",
+        "random"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "lunch",
+        "snack"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "godeungeo-jorim",
+    "name": "고등어조림",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "normal",
+        "cold"
+      ],
+      "mood": [
+        "comfort",
+        "gentle",
+        "filling"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "tteokguk",
+    "name": "떡국",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "cold"
+      ],
+      "mood": [
+        "comfort",
+        "gentle",
+        "warmSoup"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "breakfast",
+        "lunch"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "mandu-guk",
+    "name": "만둣국",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "cold"
+      ],
+      "mood": [
+        "comfort",
+        "gentle",
+        "warmSoup",
+        "quick"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "dubu-kimchi",
+    "name": "두부김치",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "normal",
+        "cold"
+      ],
+      "mood": [
+        "comfort",
+        "healthy",
+        "random"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "snack",
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "nakji-jeongol",
+    "name": "낙지전골",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "cold"
+      ],
+      "mood": [
+        "stress",
+        "filling",
+        "warmSoup",
+        "celebration"
+      ],
+      "groupSize": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "mealTime": [
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "고가"
+    }
+  },
+  {
+    "id": "dogani-tang",
+    "name": "도가니탕",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "cold"
+      ],
+      "mood": [
+        "energy",
+        "warmSoup",
+        "gentle"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "mukbap",
+    "name": "묵밥",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "hot"
+      ],
+      "mood": [
+        "refresh",
+        "diet",
+        "chilled",
+        "healthy"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "hoe-deopbap",
+    "name": "회덮밥",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "hot",
+        "normal"
+      ],
+      "mood": [
+        "refresh",
+        "healthy",
+        "diet"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "mulhoe",
+    "name": "물회",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "hot"
+      ],
+      "mood": [
+        "refresh",
+        "chilled",
+        "healthy"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "ganjang-gejang",
+    "name": "간장게장",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "celebration",
+        "filling",
+        "comfort"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "고가"
+    }
+  },
+  {
+    "id": "ori-bulgogi",
+    "name": "오리불고기",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "normal",
+        "cold"
+      ],
+      "mood": [
+        "energy",
+        "meatCraving",
+        "filling"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "jokbal",
+    "name": "족발",
+    "category": "한식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "leisure",
+        "meatCraving",
+        "filling",
+        "celebration"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "mealTime": [
+        "dinner",
+        "lateNight"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "yurin-gi",
+    "name": "유린기",
+    "category": "중식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "refresh",
+        "meatCraving",
+        "adventure"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "gongsimchae-bokkeum",
+    "name": "공심채볶음",
+    "category": "중식",
+    "tags": {
+      "weather": [
+        "normal",
+        "hot"
+      ],
+      "mood": [
+        "healthy",
+        "refresh",
+        "random"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "menbosha",
+    "name": "멘보샤",
+    "category": "중식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "greasy",
+        "adventure",
+        "filling"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "yangjangpi",
+    "name": "양장피",
+    "category": "중식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "celebration",
+        "adventure",
+        "filling"
+      ],
+      "groupSize": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "mealTime": [
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "고가"
+    }
+  },
+  {
+    "id": "gan-jjajang",
+    "name": "간짜장",
+    "category": "중식",
+    "tags": {
+      "weather": [
+        "normal",
+        "rainy"
+      ],
+      "mood": [
+        "comfort",
+        "noodleCraving",
+        "quick"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "gochu-japchae",
+    "name": "고추잡채",
+    "category": "중식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "healthy",
+        "stress",
+        "random"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "lajogi",
+    "name": "라조기",
+    "category": "중식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "adventure",
+        "meatCraving",
+        "stress"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "palbochae",
+    "name": "팔보채",
+    "category": "중식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "celebration",
+        "healthy",
+        "filling"
+      ],
+      "groupSize": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "mealTime": [
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "고가"
+    }
+  },
+  {
+    "id": "twigim-mandu",
+    "name": "튀김만두",
+    "category": "중식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "greasy",
+        "quick",
+        "random"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "snack",
+        "lunch"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "sanla-tang",
+    "name": "산라탕",
+    "category": "중식",
+    "tags": {
+      "weather": [
+        "cold",
+        "rainy"
+      ],
+      "mood": [
+        "hangover",
+        "warmSoup",
+        "refresh"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "kkanpung-saeu",
+    "name": "깐풍새우",
+    "category": "중식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "adventure",
+        "filling",
+        "stress"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "고가"
+    }
+  },
+  {
+    "id": "gyeran-tang",
+    "name": "계란탕",
+    "category": "중식",
+    "tags": {
+      "weather": [
+        "cold"
+      ],
+      "mood": [
+        "gentle",
+        "warmSoup",
+        "comfort",
+        "hangover"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "bukgyeong-ori",
+    "name": "북경오리",
+    "category": "중식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "celebration",
+        "adventure",
+        "filling"
+      ],
+      "groupSize": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "mealTime": [
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "고가"
+    }
+  },
+  {
+    "id": "wonton-myeon",
+    "name": "완탕면",
+    "category": "중식",
+    "tags": {
+      "weather": [
+        "cold",
+        "rainy"
+      ],
+      "mood": [
+        "comfort",
+        "noodleCraving",
+        "gentle"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "dongpayuk",
+    "name": "동파육",
+    "category": "중식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "celebration",
+        "greasy",
+        "filling"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "고가"
+    }
+  },
+  {
+    "id": "mala-xiangguo",
+    "name": "마라샹궈",
+    "category": "중식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "stress",
+        "adventure",
+        "greasy"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "dinner",
+        "lateNight"
+      ],
+      "spicy": true,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "gyukatsu",
+    "name": "규카츠",
+    "category": "일식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "greasy",
+        "celebration",
+        "filling"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "고가"
+    }
+  },
+  {
+    "id": "sukiyaki",
+    "name": "스키야키",
+    "category": "일식",
+    "tags": {
+      "weather": [
+        "cold"
+      ],
+      "mood": [
+        "comfort",
+        "warmSoup",
+        "meatCraving",
+        "leisure"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "고가"
+    }
+  },
+  {
+    "id": "mori-soba",
+    "name": "모리소바",
+    "category": "일식",
+    "tags": {
+      "weather": [
+        "hot"
+      ],
+      "mood": [
+        "refresh",
+        "noodleCraving",
+        "chilled",
+        "diet"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "ebi-don",
+    "name": "에비동",
+    "category": "일식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "quick",
+        "greasy",
+        "filling"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "tendon",
+    "name": "텐동",
+    "category": "일식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "greasy",
+        "filling",
+        "quick"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "oyakodon",
+    "name": "오야코동",
+    "category": "일식",
+    "tags": {
+      "weather": [
+        "normal",
+        "cold"
+      ],
+      "mood": [
+        "comfort",
+        "gentle",
+        "quick"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "unadon",
+    "name": "우나동",
+    "category": "일식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "energy",
+        "celebration",
+        "filling"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "고가"
+    }
+  },
+  {
+    "id": "ochazuke",
+    "name": "오차즈케",
+    "category": "일식",
+    "tags": {
+      "weather": [
+        "normal",
+        "hot"
+      ],
+      "mood": [
+        "gentle",
+        "diet",
+        "quick",
+        "hangover"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "breakfast",
+        "lateNight"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "yakisoba",
+    "name": "야키소바",
+    "category": "일식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "quick",
+        "noodleCraving",
+        "greasy"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "lunch",
+        "snack"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "okonomiyaki",
+    "name": "오코노미야키",
+    "category": "일식",
+    "tags": {
+      "weather": [
+        "rainy"
+      ],
+      "mood": [
+        "comfort",
+        "random",
+        "filling"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner",
+        "snack"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "gyoza",
+    "name": "교자",
+    "category": "일식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "greasy",
+        "quick",
+        "random"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner",
+        "snack"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "tonjiru",
+    "name": "돈지루",
+    "category": "일식",
+    "tags": {
+      "weather": [
+        "cold"
+      ],
+      "mood": [
+        "warmSoup",
+        "comfort",
+        "healthy"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "chawanmushi",
+    "name": "자완무시",
+    "category": "일식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "gentle",
+        "healthy",
+        "diet"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner",
+        "snack"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "mizutaki",
+    "name": "미즈타키",
+    "category": "일식",
+    "tags": {
+      "weather": [
+        "cold"
+      ],
+      "mood": [
+        "warmSoup",
+        "healthy",
+        "leisure",
+        "gentle"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "고가"
+    }
+  },
+  {
+    "id": "tenpura-moduem",
+    "name": "모듬튀김",
+    "category": "일식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "greasy",
+        "celebration",
+        "filling"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "saba-shioyaki",
+    "name": "고등어소금구이",
+    "category": "일식",
+    "tags": {
+      "weather": [
+        "normal",
+        "cold"
+      ],
+      "mood": [
+        "gentle",
+        "comfort",
+        "healthy"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "buta-don",
+    "name": "부타동",
+    "category": "일식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "quick",
+        "filling",
+        "meatCraving"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "kare-raisu",
+    "name": "일본식카레라이스",
+    "category": "일식",
+    "tags": {
+      "weather": [
+        "normal",
+        "rainy"
+      ],
+      "mood": [
+        "comfort",
+        "quick",
+        "filling"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "hambaagu",
+    "name": "함박스테이크",
+    "category": "일식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "comfort",
+        "meatCraving",
+        "celebration"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "risotto",
+    "name": "리조또",
+    "category": "양식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "leisure",
+        "celebration",
+        "comfort"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "gnocchi",
+    "name": "뇨끼",
+    "category": "양식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "comfort",
+        "leisure",
+        "filling"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "tapas",
+    "name": "타파스",
+    "category": "양식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "leisure",
+        "adventure",
+        "celebration"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "dinner",
+        "snack"
+      ],
+      "spicy": false,
+      "price": "고가"
+    }
+  },
+  {
+    "id": "eggs-benedict",
+    "name": "에그벤네딕트",
+    "category": "양식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "leisure",
+        "gentle",
+        "celebration"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "breakfast",
+        "lunch"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "carbonara",
+    "name": "까르보나라",
+    "category": "양식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "comfort",
+        "noodleCraving",
+        "greasy"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "bolognese",
+    "name": "볼로네제",
+    "category": "양식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "comfort",
+        "filling",
+        "noodleCraving"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "aglio-olio",
+    "name": "알리오올리오",
+    "category": "양식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "quick",
+        "noodleCraving",
+        "diet"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "lasagna",
+    "name": "라자냐",
+    "category": "양식",
+    "tags": {
+      "weather": [
+        "cold"
+      ],
+      "mood": [
+        "comfort",
+        "filling",
+        "celebration"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "quiche",
+    "name": "키슈",
+    "category": "양식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "gentle",
+        "leisure",
+        "refresh"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "breakfast",
+        "lunch",
+        "snack"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "beef-stew",
+    "name": "비프스튜",
+    "category": "양식",
+    "tags": {
+      "weather": [
+        "cold"
+      ],
+      "mood": [
+        "comfort",
+        "warmSoup",
+        "filling"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "fish-and-chips",
+    "name": "피쉬앤칩스",
+    "category": "양식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "greasy",
+        "quick",
+        "random"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "lunch",
+        "snack"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "ratatouille",
+    "name": "라따뚜이",
+    "category": "양식",
+    "tags": {
+      "weather": [
+        "normal",
+        "hot"
+      ],
+      "mood": [
+        "healthy",
+        "diet",
+        "refresh"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "paella",
+    "name": "빠에야",
+    "category": "양식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "celebration",
+        "filling",
+        "adventure"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "고가"
+    }
+  },
+  {
+    "id": "chicken-cordon-bleu",
+    "name": "코든블루",
+    "category": "양식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "greasy",
+        "celebration",
+        "meatCraving"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "minestrone",
+    "name": "미네스트로네",
+    "category": "양식",
+    "tags": {
+      "weather": [
+        "cold",
+        "rainy"
+      ],
+      "mood": [
+        "gentle",
+        "healthy",
+        "warmSoup"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "beef-wellington",
+    "name": "비프웰링턴",
+    "category": "양식",
+    "tags": {
+      "weather": [
+        "cold"
+      ],
+      "mood": [
+        "celebration",
+        "meatCraving",
+        "adventure"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "고가"
+    }
+  },
+  {
+    "id": "caprese-salad",
+    "name": "카프레제",
+    "category": "양식",
+    "tags": {
+      "weather": [
+        "hot"
+      ],
+      "mood": [
+        "refresh",
+        "healthy",
+        "diet",
+        "chilled"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch",
+        "snack"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "mushroom-soup",
+    "name": "양송이수프",
+    "category": "양식",
+    "tags": {
+      "weather": [
+        "cold",
+        "rainy"
+      ],
+      "mood": [
+        "gentle",
+        "comfort",
+        "warmSoup"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "club-sandwich",
+    "name": "클럽샌드위치",
+    "category": "양식",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "quick",
+        "filling",
+        "random"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "breakfast",
+        "lunch",
+        "snack"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "duck-confit",
+    "name": "콩피오리다리",
+    "category": "양식",
+    "tags": {
+      "weather": [
+        "cold"
+      ],
+      "mood": [
+        "celebration",
+        "meatCraving",
+        "adventure"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "고가"
+    }
+  },
+  {
+    "id": "banh-mi",
+    "name": "반미",
+    "category": "기타",
+    "tags": {
+      "weather": [
+        "normal",
+        "hot"
+      ],
+      "mood": [
+        "quick",
+        "refresh",
+        "random"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "breakfast",
+        "lunch",
+        "snack"
+      ],
+      "spicy": true,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "kebab",
+    "name": "케밥",
+    "category": "기타",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "quick",
+        "filling",
+        "meatCraving"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner",
+        "lateNight"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "curry-indian",
+    "name": "인도커리",
+    "category": "기타",
+    "tags": {
+      "weather": [
+        "normal",
+        "rainy"
+      ],
+      "mood": [
+        "comfort",
+        "adventure",
+        "warmSoup"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "nasi-goreng",
+    "name": "나시고레",
+    "category": "기타",
+    "tags": {
+      "weather": [
+        "normal",
+        "hot"
+      ],
+      "mood": [
+        "adventure",
+        "filling",
+        "random"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "wolnam-ssam",
+    "name": "월남쌈",
+    "category": "기타",
+    "tags": {
+      "weather": [
+        "hot"
+      ],
+      "mood": [
+        "healthy",
+        "refresh",
+        "diet",
+        "leisure"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "bun-cha",
+    "name": "분짜",
+    "category": "기타",
+    "tags": {
+      "weather": [
+        "hot"
+      ],
+      "mood": [
+        "refresh",
+        "healthy",
+        "noodleCraving"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "mango-sticky-rice",
+    "name": "망고스티키라이스",
+    "category": "기타",
+    "tags": {
+      "weather": [
+        "hot"
+      ],
+      "mood": [
+        "sweet",
+        "chilled",
+        "refresh"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "snack"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "churros",
+    "name": "추로스",
+    "category": "기타",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "sweet",
+        "random",
+        "adventure"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "snack"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "waffle",
+    "name": "와플",
+    "category": "기타",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "sweet",
+        "leisure",
+        "comfort"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "breakfast",
+        "snack"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "egg-tart",
+    "name": "에그타르트",
+    "category": "기타",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "sweet",
+        "quick",
+        "random"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "snack"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "falafel-plate",
+    "name": "팔라펠플레이트",
+    "category": "기타",
+    "tags": {
+      "weather": [
+        "normal",
+        "hot"
+      ],
+      "mood": [
+        "healthy",
+        "diet",
+        "adventure"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "hummus-plate",
+    "name": "후무스플레이트",
+    "category": "기타",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "healthy",
+        "diet",
+        "leisure"
+      ],
+      "groupSize": [
+        "1",
+        "2",
+        "3"
+      ],
+      "mealTime": [
+        "snack",
+        "lunch"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "laksa",
+    "name": "락사",
+    "category": "기타",
+    "tags": {
+      "weather": [
+        "rainy",
+        "hot"
+      ],
+      "mood": [
+        "adventure",
+        "warmSoup",
+        "noodleCraving"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "khao-man-gai",
+    "name": "카오만가이",
+    "category": "기타",
+    "tags": {
+      "weather": [
+        "normal",
+        "hot"
+      ],
+      "mood": [
+        "comfort",
+        "gentle",
+        "quick"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "lunch",
+        "dinner"
+      ],
+      "spicy": false,
+      "price": "저가"
+    }
+  },
+  {
+    "id": "nachos",
+    "name": "나초",
+    "category": "기타",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "greasy",
+        "random",
+        "celebration"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "snack",
+        "lateNight"
+      ],
+      "spicy": true,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "crepe",
+    "name": "크레페",
+    "category": "기타",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "sweet",
+        "leisure",
+        "random"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "snack"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "jambalaya",
+    "name": "잠발라야",
+    "category": "기타",
+    "tags": {
+      "weather": [
+        "normal"
+      ],
+      "mood": [
+        "adventure",
+        "filling",
+        "stress"
+      ],
+      "groupSize": [
+        "2",
+        "3",
+        "4"
+      ],
+      "mealTime": [
+        "dinner"
+      ],
+      "spicy": true,
+      "price": "중가"
+    }
+  },
+  {
+    "id": "acai-bowl",
+    "name": "아사이볼",
+    "category": "기타",
+    "tags": {
+      "weather": [
+        "hot"
+      ],
+      "mood": [
+        "healthy",
+        "diet",
+        "refresh",
+        "chilled"
+      ],
+      "groupSize": [
+        "1",
+        "2"
+      ],
+      "mealTime": [
+        "breakfast",
+        "snack"
+      ],
+      "spicy": false,
+      "price": "중가"
+    }
+  }
 ]
