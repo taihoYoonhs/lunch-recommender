@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react'
 import { useGeolocation } from './hooks/useGeolocation'
 import { useWeather } from './hooks/useWeather'
 import { useLocalStorage } from './hooks/useLocalStorage'
-import { classifyWeather, getMenuById, getWeatherLabel, recommendMenu } from './utils/recommend'
+import { classifyWeather, getMenuById, getRecommendReason, getWeatherLabel, recommendMenu } from './utils/recommend'
 import { getMealTime, getMealTimeLabel } from './utils/time'
 import { MOOD_OPTIONS } from './data/moods'
 import { GROUP_SIZE_OPTIONS } from './data/groupSizes'
@@ -17,12 +17,17 @@ import type { GroupSize, HistoryEntry, MenuItem, MoodKey } from './types'
 const HISTORY_LIMIT = 10
 const RECENT_EXCLUDE_COUNT = 5
 
+interface Recommendation {
+  menu: MenuItem
+  reason: string
+}
+
 function App() {
   const geo = useGeolocation()
   const [manualCity, setManualCity] = useState<string | null>(null)
   const [mood, setMood] = useState<MoodKey>('random')
   const [groupSize, setGroupSize] = useState<GroupSize>('1')
-  const [currentMenu, setCurrentMenu] = useState<MenuItem | null>(null)
+  const [recommendation, setRecommendation] = useState<Recommendation | null>(null)
   const [favorites, setFavorites] = useLocalStorage<MenuItem[]>('lunch-favorites', [])
   const [history, setHistory] = useLocalStorage<HistoryEntry[]>('lunch-history', [])
 
@@ -46,9 +51,10 @@ function App() {
   function handleRecommend() {
     if (!condition) return
     const recentIds = history.slice(0, RECENT_EXCLUDE_COUNT).map((entry) => entry.menuId)
-    const menu = recommendMenu({ weather: condition, mood, groupSize, mealTime, excludeIds: recentIds })
-    setCurrentMenu(menu)
-    setHistory((prev) => [{ menuId: menu.id, recommendedAt: Date.now() }, ...prev].slice(0, HISTORY_LIMIT))
+    const input = { weather: condition, mood, groupSize, mealTime, excludeIds: recentIds }
+    const result = recommendMenu(input)
+    setRecommendation({ menu: result.menu, reason: getRecommendReason(input, result) })
+    setHistory((prev) => [{ menuId: result.menu.id, recommendedAt: Date.now() }, ...prev].slice(0, HISTORY_LIMIT))
   }
 
   function toggleFavorite(menu: MenuItem) {
@@ -59,7 +65,7 @@ function App() {
     )
   }
 
-  const isCurrentFavorite = currentMenu ? favorites.some((fav) => fav.id === currentMenu.id) : false
+  const isCurrentFavorite = recommendation ? favorites.some((fav) => fav.id === recommendation.menu.id) : false
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-orange-50 to-slate-100 px-4 py-10 dark:from-slate-900 dark:to-slate-950">
@@ -114,11 +120,12 @@ function App() {
           </section>
         )}
 
-        {currentMenu && (
+        {recommendation && (
           <MenuCard
-            menu={currentMenu}
+            menu={recommendation.menu}
+            reason={recommendation.reason}
             isFavorite={isCurrentFavorite}
-            onToggleFavorite={() => toggleFavorite(currentMenu)}
+            onToggleFavorite={() => toggleFavorite(recommendation.menu)}
             onReroll={handleRecommend}
           />
         )}
