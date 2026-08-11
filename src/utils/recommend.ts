@@ -3,26 +3,6 @@ import type { GroupSize, MealTime, MenuItem, MoodKey, WeatherCondition } from '.
 
 const menus = menusData as MenuItem[]
 
-const WEATHER_LABELS: Record<WeatherCondition, string> = {
-  hot: '더움',
-  cold: '추움',
-  rainy: '비',
-  normal: '보통',
-}
-
-export function classifyWeather(tempC: number, condition: string): WeatherCondition {
-  const c = condition.toLowerCase()
-  if (c.includes('snow')) return 'cold'
-  if (c.includes('rain') || c.includes('drizzle') || c.includes('thunderstorm')) return 'rainy'
-  if (tempC >= 28) return 'hot'
-  if (tempC <= 5) return 'cold'
-  return 'normal'
-}
-
-export function getWeatherLabel(condition: WeatherCondition): string {
-  return WEATHER_LABELS[condition]
-}
-
 export function getMenuById(id: string): MenuItem | undefined {
   return menus.find((menu) => menu.id === id)
 }
@@ -37,8 +17,8 @@ export interface RecommendInput {
 
 type FilterKey = 'mood' | 'weather' | 'groupSize' | 'mealTime'
 
-// 후보가 0개일 때 완화(제외)할 조건의 순서 — 사용자가 직접 고른 조건보다
-// 자동으로 가져온 고정 조건을 더 오래 지키도록 mood를 가장 먼저 완화한다.
+// 후보가 0개일 때 완화(제외)할 조건의 순서 — 선택 폭이 넓어 다른 조건과
+// 충돌하기 쉬운 mood를 가장 먼저 완화하고, 시간대는 가장 나중까지 지킨다.
 const RELAX_ORDER: FilterKey[] = ['mood', 'weather', 'groupSize', 'mealTime']
 
 export interface RecommendResult {

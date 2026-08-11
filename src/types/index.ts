@@ -1,17 +1,4 @@
-export interface Coordinates {
-  lat: number
-  lon: number
-}
-
 export type WeatherCondition = 'hot' | 'cold' | 'rainy' | 'normal'
-
-export interface WeatherData {
-  tempC: number
-  condition: string
-  description: string
-  cityName: string
-  icon: string
-}
 
 export type MoodKey =
   | 'stress'
