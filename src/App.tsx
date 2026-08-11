@@ -47,6 +47,16 @@ function App() {
 
   const isCurrentFavorite = recommendation ? favorites.some((fav) => fav.id === recommendation.menu.id) : false
 
+  function handleClearFavorites() {
+    if (favorites.length === 0) return
+    if (window.confirm('즐겨찾기를 모두 삭제할까요?')) setFavorites([])
+  }
+
+  function handleClearHistory() {
+    if (history.length === 0) return
+    if (window.confirm('최근 추천 기록을 모두 삭제할까요?')) setHistory([])
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-orange-50 to-slate-100 px-4 py-10 dark:from-slate-900 dark:to-slate-950">
       <div className="mx-auto flex max-w-md flex-col gap-6">
@@ -82,12 +92,34 @@ function App() {
         )}
 
         <section>
-          <h2 className="mb-2 text-sm font-semibold text-slate-600 dark:text-slate-300">즐겨찾기</h2>
+          <div className="mb-2 flex items-center justify-between">
+            <h2 className="text-sm font-semibold text-slate-600 dark:text-slate-300">즐겨찾기</h2>
+            {favorites.length > 0 && (
+              <button
+                type="button"
+                onClick={handleClearFavorites}
+                className="text-xs text-slate-400 hover:text-slate-600 dark:hover:text-slate-200"
+              >
+                초기화
+              </button>
+            )}
+          </div>
           <FavoritesPanel favorites={favorites} onRemove={(id) => setFavorites((prev) => prev.filter((fav) => fav.id !== id))} />
         </section>
 
         <section>
-          <h2 className="mb-2 text-sm font-semibold text-slate-600 dark:text-slate-300">최근 추천 기록</h2>
+          <div className="mb-2 flex items-center justify-between">
+            <h2 className="text-sm font-semibold text-slate-600 dark:text-slate-300">최근 추천 기록</h2>
+            {history.length > 0 && (
+              <button
+                type="button"
+                onClick={handleClearHistory}
+                className="text-xs text-slate-400 hover:text-slate-600 dark:hover:text-slate-200"
+              >
+                초기화
+              </button>
+            )}
+          </div>
           <HistoryPanel history={history} getMenu={getMenuById} />
         </section>
       </div>
