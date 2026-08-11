@@ -20,9 +20,7 @@ export function HistoryPanel({ history, getMenu }: HistoryPanelProps) {
             key={entry.recommendedAt}
             className="flex items-center justify-between rounded-lg px-2 py-1 text-sm text-slate-600 dark:text-slate-300"
           >
-            <span>
-              {menu.emoji} {menu.name}
-            </span>
+            <span>{menu.name}</span>
             <span className="text-xs text-slate-400">
               {new Date(entry.recommendedAt).toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' })}
             </span>

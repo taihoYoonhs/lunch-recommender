@@ -1,13 +1,19 @@
-# 오늘 점심 뭐 먹지? 🍱
+# 오늘 뭐 먹지? 🍱
 
-직장인을 위한 점심 메뉴 추천 앱입니다. 현재 위치(또는 직접 입력한 도시)의 날씨를 확인하고, 날씨에 맞는 점심 메뉴를 추천해줍니다.
+직장인을 위한 메뉴 추천 앱입니다. 날씨·시간대는 자동으로 가져오고, 기분과 인원수만 선택하면 딱 맞는 메뉴를 추천해줍니다.
 
 ## 주요 기능
 
+**고정 조건 (자동으로 가져옴)**
 - 브라우저 Geolocation API로 현재 위치 확인, 실패 시 도시명 직접 입력으로 대체
-- OpenWeatherMap API로 실시간 날씨 조회
-- 날씨(온도/맑음·비·눈)에 따라 어울리는 메뉴를 정적 JSON 데이터에서 추천
-- 즐겨찾기 및 최근 추천 기록을 localStorage에 저장 (백엔드/DB 없음)
+- OpenWeatherMap API로 실시간 날씨 조회 후 더움/추움/비/보통 4단계로 분류 (한글로 표기)
+- 기기 시간 기준으로 아침/점심/간식/저녁/야식 시간대 판별
+
+**사용자 입력 조건 (select)**
+- 오늘의 기분 15종 중 선택 (스트레스/보양식/해장/다이어트/기분전환 등)
+- 인원수 (1~6명, 7명 이상)
+
+날씨·시간대·기분·인원수 4가지 조건에 가장 잘 맞는 메뉴를 점수화하여 추천하고, 즐겨찾기 및 최근 추천 기록을 localStorage에 저장합니다 (백엔드/DB 없음).
 
 ## 기술 스택
 
@@ -81,9 +87,9 @@ npm run deploy
 
 ```
 src/
-  components/   # WeatherCard, CityInput, MenuCard, FavoritesPanel, HistoryPanel
+  components/   # WeatherCard, CityInput, MenuCard, SelectField, FavoritesPanel, HistoryPanel
   hooks/         # useGeolocation, useWeather, useLocalStorage
-  data/          # menus.json (정적 메뉴 데이터)
-  utils/         # recommend.ts (날씨 분류 및 메뉴 추천 로직)
+  data/          # menus.json (정적 메뉴 데이터, 49개), moods.ts, groupSizes.ts
+  utils/         # recommend.ts (날씨 분류 및 점수 기반 메뉴 추천), time.ts (시간대 판별)
   types/         # 공용 타입 정의
 ```

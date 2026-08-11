@@ -2,9 +2,11 @@ import type { WeatherData } from '../types'
 
 interface WeatherCardProps {
   weather: WeatherData
+  conditionLabel: string
+  mealTimeLabel: string
 }
 
-export function WeatherCard({ weather }: WeatherCardProps) {
+export function WeatherCard({ weather, conditionLabel, mealTimeLabel }: WeatherCardProps) {
   return (
     <div className="flex items-center gap-4 rounded-2xl bg-white/70 p-4 shadow-sm ring-1 ring-slate-200 dark:bg-slate-800/70 dark:ring-slate-700">
       <img
@@ -15,7 +17,9 @@ export function WeatherCard({ weather }: WeatherCardProps) {
       <div>
         <p className="text-sm text-slate-500 dark:text-slate-400">{weather.cityName}</p>
         <p className="text-2xl font-semibold text-slate-800 dark:text-slate-100">{weather.tempC}°C</p>
-        <p className="text-sm text-slate-500 dark:text-slate-400">{weather.description}</p>
+        <p className="text-sm text-slate-500 dark:text-slate-400">
+          {weather.description} · {conditionLabel} · {mealTimeLabel} 시간대
+        </p>
       </div>
     </div>
   )

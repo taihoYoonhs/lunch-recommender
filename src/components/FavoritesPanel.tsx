@@ -17,9 +17,7 @@ export function FavoritesPanel({ favorites, onRemove }: FavoritesPanelProps) {
           key={menu.id}
           className="flex items-center gap-1 rounded-full bg-amber-50 px-3 py-1 text-sm text-amber-700 ring-1 ring-amber-200 dark:bg-amber-900/30 dark:text-amber-300 dark:ring-amber-800"
         >
-          <span>
-            {menu.emoji} {menu.name}
-          </span>
+          <span>{menu.name}</span>
           <button
             type="button"
             onClick={() => onRemove(menu.id)}
