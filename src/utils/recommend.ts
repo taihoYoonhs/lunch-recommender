@@ -86,6 +86,11 @@ const MOOD_REASONS: Record<MoodKey, string> = {
   sweet: '단 게 당기는 순간이라서',
   chilled: '시원한 음식이 생각나는 날이라서',
   warmSoup: '뜨끈한 국물이 필요한 날이라서',
+  meatCraving: '고기가 당기는 기분이라서',
+  noodleCraving: '면 요리가 당기는 기분이라서',
+  gentle: '속이 편안한 음식이 필요해서',
+  healthy: '건강하게 챙겨 먹고 싶은 기분이라서',
+  greasy: '기름지고 든든한 게 당기는 기분이라서',
 }
 
 const WEATHER_REASONS: Record<WeatherCondition, string> = {

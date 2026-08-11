@@ -16,6 +16,11 @@ export type MoodKey =
   | 'sweet'
   | 'chilled'
   | 'warmSoup'
+  | 'meatCraving'
+  | 'noodleCraving'
+  | 'gentle'
+  | 'healthy'
+  | 'greasy'
 
 export type GroupSize = '1' | '2' | '3' | '4' | '5' | '6' | '7+'
 

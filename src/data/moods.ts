@@ -21,4 +21,9 @@ export const MOOD_OPTIONS: MoodOption[] = [
   { key: 'sweet', label: '단 게 당김' },
   { key: 'chilled', label: '시원한/차가운 음식이 먹고싶음' },
   { key: 'warmSoup', label: '뜨끈한 국물이 필요함' },
+  { key: 'meatCraving', label: '고기가 당김' },
+  { key: 'noodleCraving', label: '면 요리가 당김' },
+  { key: 'gentle', label: '속이 편안한 음식이 필요함' },
+  { key: 'healthy', label: '건강하게 챙겨먹고 싶음' },
+  { key: 'greasy', label: '기름지고 든든한 게 당김' },
 ]
