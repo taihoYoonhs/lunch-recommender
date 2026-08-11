@@ -13,7 +13,7 @@
 - 오늘의 기분 15종 중 선택 (스트레스/보양식/해장/다이어트/기분전환 등)
 - 인원수 (1~6명, 7명 이상)
 
-날씨·시간대·기분·인원수 4가지 조건에 가장 잘 맞는 메뉴를 점수화하여 추천하고, 즐겨찾기 및 최근 추천 기록을 localStorage에 저장합니다 (백엔드/DB 없음).
+날씨·시간대·기분·인원수 4가지 조건을 모두 만족하는 메뉴 중 랜덤으로 추천합니다. 조건에 맞는 메뉴가 없으면 기분 → 날씨 → 인원수 → 시간대 순으로 조건을 하나씩 완화해 다시 찾고, 왜 추천했는지 이유 문구도 함께 보여줍니다. 즐겨찾기 및 최근 추천 기록은 localStorage에 저장합니다 (백엔드/DB 없음).
 
 ## 기술 스택
 
@@ -90,6 +90,6 @@ src/
   components/   # WeatherCard, CityInput, MenuCard, SelectField, FavoritesPanel, HistoryPanel
   hooks/         # useGeolocation, useWeather, useLocalStorage
   data/          # menus.json (정적 메뉴 데이터, 49개), moods.ts, groupSizes.ts
-  utils/         # recommend.ts (날씨 분류 및 점수 기반 메뉴 추천), time.ts (시간대 판별)
+  utils/         # recommend.ts (날씨 분류, 조건 필터+완화 기반 메뉴 추천), time.ts (시간대 판별)
   types/         # 공용 타입 정의
 ```
