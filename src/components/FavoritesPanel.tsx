@@ -15,14 +15,15 @@ export function FavoritesPanel({ favorites, onRemove }: FavoritesPanelProps) {
       {favorites.map((menu) => (
         <li
           key={menu.id}
-          className="flex items-center gap-1 rounded-full bg-amber-50 px-3 py-1 text-sm text-amber-700 ring-1 ring-amber-200 dark:bg-amber-900/30 dark:text-amber-300 dark:ring-amber-800"
+          className="flex items-center gap-1.5 rounded-full bg-amber-50 px-3 py-1 text-sm text-amber-700 ring-1 ring-amber-200 dark:bg-amber-900/30 dark:text-amber-300 dark:ring-amber-800"
         >
           <span>{menu.name}</span>
+          {menu.tags.spicy && <span className="text-xs">🌶️</span>}
           <button
             type="button"
             onClick={() => onRemove(menu.id)}
             aria-label={`${menu.name} 즐겨찾기 제거`}
-            className="ml-1 text-amber-500 hover:text-amber-700 dark:text-amber-400"
+            className="ml-0.5 text-amber-500 hover:text-amber-700 dark:text-amber-400"
           >
             ×
           </button>
