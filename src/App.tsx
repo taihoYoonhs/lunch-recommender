@@ -34,7 +34,8 @@ function App() {
     const input = { weather, mood, groupSize, mealTime, excludeIds: recentIds }
     const result = recommendMenu(input)
     setRecommendation({ menu: result.menu, reason: getRecommendReason(input, result) })
-    setHistory((prev) => [{ menuId: result.menu.id, recommendedAt: Date.now() }, ...prev].slice(0, HISTORY_LIMIT))
+    const entryId = `${Date.now()}-${Math.random().toString(36).slice(2)}`
+    setHistory((prev) => [{ id: entryId, menuId: result.menu.id, recommendedAt: Date.now() }, ...prev].slice(0, HISTORY_LIMIT))
   }
 
   function toggleFavorite(menu: MenuItem) {

@@ -17,7 +17,7 @@ export function HistoryPanel({ history, getMenu }: HistoryPanelProps) {
         if (!menu) return null
         return (
           <li
-            key={entry.recommendedAt}
+            key={entry.id}
             className="flex items-center justify-between rounded-lg px-2 py-1 text-sm text-slate-600 dark:text-slate-300"
           >
             <span>{menu.name}</span>

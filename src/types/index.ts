@@ -45,6 +45,7 @@ export interface MenuItem {
 }
 
 export interface HistoryEntry {
+  id: string
   menuId: string
   recommendedAt: number
 }
