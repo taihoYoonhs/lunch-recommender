@@ -82,7 +82,7 @@ npm run deploy
 src/
   components/   # MenuCard, SelectField, FavoritesPanel, HistoryPanel
   hooks/         # useLocalStorage
-  data/          # menus.json (정적 메뉴 데이터, 180개), moods.ts, groupSizes.ts, weatherOptions.ts
+  data/          # menus.json (정적 메뉴 데이터, 300개), moods.ts, groupSizes.ts, weatherOptions.ts
   utils/         # recommend.ts (조건 필터+완화 기반 메뉴 추천), time.ts (시간대 판별)
   types/         # 공용 타입 정의
 ```
